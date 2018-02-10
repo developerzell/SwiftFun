@@ -3,7 +3,7 @@
 //  Swift Fun
 //
 //  Created by Zell Zeller on 2/10/18.
-//  Copyright © 2018 Zell Zeller. All rights reserved.
+//  Copyright © 2018 Zell Zeller. All rights reserved..
 //
 
 import UIKit
