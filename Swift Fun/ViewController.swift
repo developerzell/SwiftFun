@@ -10,12 +10,29 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var buttonTapCount:Int = 0
+    //var buttonTapCount:Int = 0
     
     @IBOutlet weak var myLabel: UILabel!
-    
+    @IBOutlet weak var topTextField: UITextField!
+    @IBOutlet weak var bottomTextField: UITextField!
+    @IBOutlet weak var additionSwitch: UISwitch!
     
     @IBAction func buttonTapped(_ sender: Any) {
+        let addition = additionSwitch.isOn
+        
+        if addition {
+            let sum = Double(topTextField.text!)! + Double(bottomTextField.text!)!
+            myLabel.text = "\(topTextField.text!) + \(bottomTextField.text!) = \(sum)"
+        } else {
+            let sum = Double(topTextField.text!)! - Double(bottomTextField.text!)!
+            myLabel.text = "\(topTextField.text!) - \(bottomTextField.text!) = \(sum)"
+        }
+        
+
+        
+        
+        
+        /*
         buttonTapCount += 1
         
         print(buttonTapCount)
@@ -26,6 +43,7 @@ class ViewController: UIViewController {
         } else if buttonTapCount > 15 {
             myLabel.text = "Zell is the coolest!"
         }
+        */
     }
     
     override func viewDidLoad() {
