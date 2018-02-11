@@ -28,10 +28,6 @@ class ViewController: UIViewController {
             myLabel.text = "\(topTextField.text!) - \(bottomTextField.text!) = \(sum)"
         }
         
-
-        
-        
-        
         /*
         buttonTapCount += 1
         
