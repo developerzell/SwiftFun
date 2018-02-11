@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     @IBAction func buttonTapped(_ sender: Any) {
         buttonTapCount = buttonTapCount + 1
         
+        print(buttonTapCount)
+        
         if  10...15 ~= buttonTapCount {
             view.backgroundColor = UIColor.gray
             myLabel.text = "Zell is cool!"
